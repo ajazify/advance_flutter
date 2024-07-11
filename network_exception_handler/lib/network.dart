@@ -19,7 +19,6 @@ class NetworkHandler {
     try {
       var url = Uri.parse(baseUrl + endPoint);
       var response = await http.get(url).timeout(const Duration(seconds: timeOutDuration));
-      print(_processResponse(response));
       return _processResponse(response);
     } catch (e) {
       var errorMessage = ExceptionHandlers().getExceptionString(e);
