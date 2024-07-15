@@ -5,3 +5,6 @@
 
 <h2 align="left">Dynamic TabBar and TabView - API Call</h2>
 <h2 align="left">Exception Handler - API Call</h2>
+
+<h2 align="left">Comment Cheat Codes ;) </h3>
+<button onclick="copyToClipboard('#flutterRun')">Copy</button>
