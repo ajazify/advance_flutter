@@ -13,6 +13,7 @@
 
 <h1>▒ Flutter Commands</h1>
 
+<h3>» General commands</h3>
 <h4>Create a new Flutter project</h4>
 <pre id="flutterCreate">flutter create project_name</pre>
 
@@ -46,7 +47,7 @@
 <h4>Run tests</h4>
 <pre id="flutterTest">flutter test</pre>
 
-<h3>Dart Commands</h3>
+<h3>» Dart Commands</h3>
 
 <h4>Run a Dart file</h4>
 <pre id="dartRun">dart run file_name.dart</pre>
@@ -69,7 +70,7 @@
 <h4>Publish a package</h4>
 <pre id="dartPubPublish">dart pub publish</pre>
 
-<h3>Other Useful Commands</h3>
+<h3>» Other Useful Commands</h3>
 
 <h4>List connected devices</h4>
 <pre id="flutterDevices">flutter devices</pre>
@@ -85,13 +86,13 @@ flutter config --enable-linux-desktop</pre>
 <h4>Enable web support</h4>
 <pre id="flutterWebSupport">flutter config --enable-web</pre>
 
-<h3>adb commands</h3>
+<h3>» adb commands</h3>
 
 <h4>List connected devices</h4>
 <pre id="adbDevices">adb devices</pre>
 
 <h4>Restart ADB server</h4>
-<pre id="adbRestart">adb kill-server
+<pre id="adbRestart">adb kill-server </pre>
 
 <h4>Start ADB server</h4>
 <pre id="adbStartServer">adb start-server</pre>
