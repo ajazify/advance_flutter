@@ -1,3 +1,7 @@
+<a href="https://linkedin/in/ajazify">
+    <img src="https://raw.githubusercontent.com/ajazify/git_image/main/GetX_StateManagement_Flutter.png">
+</a>
+
 <h1> How to create an project with GetX architecture in Flutter.</h1>
 <h3>#getx #Flutter</h3>
 
