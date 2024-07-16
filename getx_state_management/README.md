@@ -11,11 +11,6 @@
 
 <h2>Easy Flutter with GetX</h1>
 
-<h4>Easy Page Navigation</h4>
-<pre>Get.to(Login()); //Navigate to a New Page <br>Get.toNamed(Login()); //Navigate to a Named Route
-
-</pre>
-
 <h4>Snackbars/dialogs/bottomsheets with no context</h4>
 <pre>Get.snackbar('Hi', 'Message');<br>Get.defaultDialog(title: "I am a dialog");</pre>
 
@@ -37,6 +32,18 @@
 <h4>Easy validators:</h4>
 <pre>GetUtils.isEmail('abc@gmail.com') ? validate() errorMessage();</pre>
 
-
+<h4>Easy Page Navigation</h4>
+<pre>
+    » Get.to(Login()); //Navigate to a New Page <br>
+    » Get.toNamed(Login()); //Navigate to a Named Route <br>
+    » Get.offAll(Home()); //Navigate to a New Page and Remove All Previous Routes <br>
+    » Get.offAllNamed('/home'); //Navigate to a Named Route and Remove All Previous Routes <br>
+    » Get.off(Login()); //Navigate to a New Page and Replace the Current Route <br>
+    » Get.offNamed('/login'); //Navigate to a Named Route and Replace the Current Route <br>
+    » Get.back(); //Navigate Back to Previous Page <br>
+    » Get.until((route) => route.settings.name == '/login'); //Navigate to a Named Route and Remove Routes Until a Specific Condition is Met<br>
+    » Get.toNamed('/profile', arguments: {'id': 123}); //Navigate with Parameters <br>
+    » var id = Get.arguments['id']; //Retrieve Passed Parameters <br>
+</pre>
 
 »
