@@ -6,6 +6,7 @@ class UsersListController extends GetxController {
   RxBool isLoading = false.obs;
   RxBool isError = false.obs;
   var resp = <UsersListResponse>[].obs;
+  late String name;
 
   @override
   void onInit() {
@@ -17,9 +18,10 @@ class UsersListController extends GetxController {
     try {
       isLoading.value = true;
       List<UsersListResponse> response = await ApiProvider().fetchUsers();
+      name = response[0].company!.name ?? 'Company Name';
+      print(name); 
       if (response.isEmpty) {
-        isError.value = true;  
-       
+        isError.value = true;
       } else {
         resp.assignAll(response);
       }
