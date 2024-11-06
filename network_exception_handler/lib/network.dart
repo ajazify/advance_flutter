@@ -15,9 +15,10 @@ class NetworkHandler {
   String endPoint = '/todos/1';
 
   //! Create a method of Get or Post Request
-  Future<dynamic> getMethod() async {
+  Future<dynamic> getMethod() async { // in this dynamic you can return your response model
     try {
       var url = Uri.parse(baseUrl + endPoint);
+      // in case of post for request   body: jsonEncode(commonRequest ) << your request model
       var response = await http.get(url).timeout(const Duration(seconds: timeOutDuration));
       return _processResponse(response);
     } catch (e) {
